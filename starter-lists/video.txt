@@ -1,0 +1,17 @@
+# Starter list: Video and streaming
+# Copy the lines below into your blocklist.txt (or the whole file). One site per line.
+# A site also covers all its subdomains, so "youtube.com" blocks www.youtube.com, m.youtube.com, etc.
+youtube.com
+youtu.be
+twitch.tv
+tiktok.com
+vimeo.com
+dailymotion.com
+rumble.com
+kick.com
+netflix.com
+hulu.com
+disneyplus.com
+max.com
+primevideo.com
+crunchyroll.com

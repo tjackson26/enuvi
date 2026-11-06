@@ -1,0 +1,13 @@
+# Starter list: Social media
+# Copy the lines below into your blocklist.txt (or the whole file). One site per line.
+instagram.com
+facebook.com
+x.com
+twitter.com
+threads.net
+snapchat.com
+pinterest.com
+reddit.com
+tumblr.com
+bsky.app
+mastodon.social

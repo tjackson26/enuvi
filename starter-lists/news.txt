@@ -1,0 +1,13 @@
+# Starter list: News
+# Copy the lines below into your blocklist.txt (or the whole file). One site per line.
+# Delete any you actually need for work or study.
+cnn.com
+foxnews.com
+nytimes.com
+washingtonpost.com
+bbc.com
+bbc.co.uk
+theguardian.com
+nbcnews.com
+huffpost.com
+news.google.com

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to set up your blocklist - Enuvi Browser</title>
+<meta name="description" content="How to set up the blocklist in Enuvi Browser: what it is, how a friend keeps it, and how to link it.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header class="site">
+    <svg viewBox="0 0 100 100" role="img" aria-label="Enuvi Browser logo">
+      <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7C8CFF"/><stop offset="1" stop-color="#3A4FD0"/></linearGradient></defs>
+      <rect x="3" y="3" width="94" height="94" rx="22" fill="url(#g)"/>
+      <path d="M72.92,38.82A25.5,25.5 0 1 1 63.51,28.37" fill="none" stroke="#fff" stroke-width="8.3" stroke-linecap="round"/>
+      <circle cx="50" cy="50" r="6.2" fill="#fff"/>
+    </svg>
+    <a href="index.html">Enuvi Browser</a>
+  </header>
+  <nav><a href="guide.html">How to set up your blocklist</a><a href="privacy.html">Privacy policy</a></nav>
+
+  <h1>How to set up your blocklist</h1>
+  <p class="lead">Enuvi Browser blocks the sites on a list. A friend you trust keeps that list, so you can't switch it off in a weak moment.
+  This page has two parts: one for you, and one for the friend.</p>
+
+  <h2>Part 1: for you, setting up the app</h2>
+  <p>Out of the box, the app already blocks a small built-in list of video and social sites. To follow your friend's list instead
+  (or as well), you link it once:</p>
+  <ol>
+    <li>Ask your friend to keep a list for you, and to send you the link to it. (Part 2 below shows them how, in about five minutes.)</li>
+    <li>Open Enuvi Browser and tap the menu (<strong>&#8943;</strong>), then <strong>Settings</strong>.</li>
+    <li>Under <strong>Blocklist</strong>, paste your friend's link into the box and press <strong>Link</strong>.</li>
+  </ol>
+  <p>The first time you link a list, it applies immediately. The app checks the list every time it starts.</p>
+
+  <div class="card">
+    <h2 style="margin-top:0">The rules, in plain words</h2>
+    <table>
+      <tr><th>What changes on the list</th><th>What happens in your app</th></tr>
+      <tr><td>Your friend <strong>adds</strong> a site</td><td>It is blocked <strong>right away</strong>.</td></tr>
+      <tr><td>Your friend <strong>removes</strong> a site</td><td>It stays blocked for <strong>24 more hours</strong>, then it is unblocked.</td></tr>
+      <tr><td>The site is added back before the 24 hours are up</td><td>The removal is cancelled.</td></tr>
+      <tr><td>You ask the app to follow a <strong>different</strong> list</td><td>It switches only after <strong>24 hours</strong>. You can cancel the request.</td></tr>
+    </table>
+    <p>There is no button that turns blocking off, and no "unlock for five minutes." The 24-hour wait is on purpose: the urge to
+    watch something is an urge to watch it <em>now</em>, not tomorrow.</p>
+  </div>
+
+  <p>If the list can't be reached (you're offline, or the page is down), the app keeps using the last list it had. It never falls
+  back to "block nothing."</p>
+
+  <h2>Part 2: for the friend who keeps the list</h2>
+  <p><em>No technical background needed.</em> You are being asked to keep one small file up to date. You don't have to watch anyone
+  or be available. You only act when they ask.</p>
+
+  <h3>Setting it up (about 5 minutes)</h3>
+  <p>You need a free GitHub account at <a href="https://github.com">github.com</a>. The list lives in a "Gist", which is a small public text file.</p>
+  <ol>
+    <li>Go to <a href="https://gist.github.com">gist.github.com</a> and sign in.</li>
+    <li>In <strong>Filename</strong>, type exactly <code>blocklist.txt</code>.</li>
+    <li>In the big box, paste a starter list (see below). One site per line. Lines starting with <code>#</code> are notes and are ignored.</li>
+    <li><em>Optional but nice:</em> make the <strong>first line</strong> your name, like this: <code># owner: Sam</code>. The app then says
+    "This site is blocked. It's on Sam's list," so your friend knows who to ask.</li>
+    <li>Click <strong>Create public gist</strong>.</li>
+    <li>Copy the address of the page you land on. It looks like <code>https://gist.github.com/yourname/1a2b3c...</code></li>
+    <li><strong>Send that address to your friend.</strong> They paste it into the app, as in Part 1.</li>
+  </ol>
+
+  <h3>Starter lists</h3>
+  <p>You don't have to start from nothing. Open one, copy the lines, and paste them into your Gist. Mix them as you like:</p>
+  <ul>
+    <li><a href="starter-lists/video.txt">Video and streaming</a></li>
+    <li><a href="starter-lists/social.txt">Social media</a></li>
+    <li><a href="starter-lists/news.txt">News sites</a></li>
+    <li><a href="starter-lists/shopping.txt">Online shopping</a></li>
+    <li><a href="starter-lists/gambling.txt">Gambling and betting</a> (a starting point, not a complete list)</li>
+    <li><a href="starter-lists/games.txt">Games</a></li>
+  </ul>
+  <p>These are suggestions. Delete anything your friend genuinely needs, and add what they don't.</p>
+
+  <h3>Changing the list later</h3>
+  <p>Open your Gist, click <strong>Edit</strong>, change the lines, and click <strong>Update public gist</strong>. The app picks up the change the next time it starts.</p>
+  <ul>
+    <li>To block something new, add a line. It takes effect straight away.</li>
+    <li>To unblock something, delete its line. It unblocks after 24 hours.</li>
+  </ul>
+  <p>Write sites as plain names: <code>youtube.com</code>, not a full address. You don't need <code>www.</code>: a site also covers all its subdomains.</p>
+
+  <h3>Things to know</h3>
+  <ul>
+    <li><strong>Keep the filename <code>blocklist.txt</code>.</strong> The app looks for that name.</li>
+    <li><strong>The Gist is public.</strong> Anyone with the link can read it. Don't put anything private in it.</li>
+    <li><strong>If you make a mistake,</strong> fix it and save again. The app keeps the last good list until it can read a valid one, and an empty or broken file is ignored.</li>
+    <li><strong>You can see what changed.</strong> Gists keep a history of every edit.</li>
+    <li><strong>This is a commitment tool, not a lock.</strong> Someone determined can open a different browser, or clear the app's data on their phone, which restarts the 24-hour wait. It works best as a promise between friends, which is why your name on the list matters.</li>
+  </ul>
+
+  <footer>
+    <p>Enuvi Browser &middot; <a href="index.html">Home</a> &middot; <a href="privacy.html">Privacy policy</a></p>
+  </footer>
+</main>
+</body>
+</html>

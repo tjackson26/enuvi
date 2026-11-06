@@ -1,0 +1,10 @@
+# Starter list: Shopping
+# Copy the lines below into your blocklist.txt (or the whole file). One site per line.
+amazon.com
+ebay.com
+etsy.com
+aliexpress.com
+temu.com
+shein.com
+walmart.com
+target.com

@@ -1,0 +1,47 @@
+/* Enuvi Browser's website: three plain pages. Colors come from the app icon (#7C8CFF to #3A4FD0). */
+:root {
+  --bg: #f6f7ff;
+  --card: #ffffff;
+  --text: #1c2040;
+  --muted: #5a607f;
+  --accent: #3a4fd0;
+  --line: #dfe2f6;
+  --code: #eceefc;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #11132b;
+    --card: #1a1d3b;
+    --text: #e8eaff;
+    --muted: #a3a9d3;
+    --accent: #8b99ff;
+    --line: #2b2f57;
+    --code: #232650;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+header.site { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+header.site svg { width: 44px; height: 44px; flex: none; }
+header.site a { color: var(--text); font-weight: 650; font-size: 20px; text-decoration: none; }
+nav { margin: 0 0 28px; color: var(--muted); font-size: 15px; }
+nav a { margin-right: 16px; }
+h1 { font-size: 30px; line-height: 1.2; margin: 24px 0 8px; }
+h2 { font-size: 22px; margin: 32px 0 8px; }
+p, li { color: var(--text); }
+.lead { color: var(--muted); font-size: 19px; }
+a { color: var(--accent); }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; margin: 16px 0; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 16px; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+code, pre { background: var(--code); border-radius: 6px; font-family: ui-monospace, Consolas, monospace; font-size: 15px; }
+code { padding: 1px 5px; }
+pre { padding: 12px 14px; overflow-x: auto; }
+footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
+.todo { background: #fff3cd; color: #5c4400; padding: 0 4px; border-radius: 4px; }

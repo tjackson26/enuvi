@@ -1,0 +1,12 @@
+# Starter list: Gambling and betting
+# Copy the lines below into your blocklist.txt (or the whole file). One site per line.
+# This is a starting point, not a complete list: new sites appear all the time.
+draftkings.com
+fanduel.com
+bet365.com
+betmgm.com
+caesars.com
+pokerstars.com
+stake.com
+williamhill.com
+bovada.lv
