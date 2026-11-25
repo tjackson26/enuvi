@@ -23,13 +23,13 @@
   <h1>Privacy policy</h1>
   <p class="lead">Short version: Enuvi Browser collects no personal data. There are no accounts, no ads, no analytics, and no
   tracking. I (the developer) never receive anything about you or what you browse.</p>
-  <p>Effective November 11, 2026. This policy covers the Enuvi Browser app for Android and for iPhone.</p>
+  <p>Effective November 24, 2026. This policy covers the Enuvi Browser app for Android, for iPhone and for Mac.</p>
 
   <h2>Who I am</h2>
   <p>Enuvi Browser is made by Taylor Jackson. You can reach me at tjackson.video@gmail.com.</p>
 
   <h2>What the app stores on your device</h2>
-  <p>Some things stay on your device, in the app's private storage. They are never sent to me or to anyone else:</p>
+  <p>Some things stay on your device, in the app's private storage (on a Mac, the app's own sandbox folder). They are never sent to me or to anyone else:</p>
   <ul>
     <li><strong>Your bookmarks</strong> (up to 20): the address and title of each.</li>
     <li><strong>Your choices:</strong> light or dark theme, whether the bookmarks bar is shown, and where downloads go.</li>
@@ -41,6 +41,12 @@
   unblocked. It holds only the list of blocked sites, a few dates and times, and the address of the list you linked; never a
   password or anything about you. It stays on that iPhone after the app is deleted, is never synced through iCloud and never
   moves to another device, and is removed when the iPhone is erased.</p>
+  <p><strong>On Mac</strong>, the app runs in Apple's App Sandbox, so your bookmarks and choices live in the app's own folder
+  (<code>~/Library/Containers/app.enuvi.browser.mac</code>). Moving the app to the Trash does not remove that folder; to remove
+  it, delete the folder. The blocklist state is kept separately, in the Mac's Keychain, so that removing and reinstalling the
+  app does not reset the 24-hour wait before a site is unblocked. As on iPhone, it holds only the list of blocked
+  sites, a few dates and times, and the address of the list you linked; never a password or anything about you. It is kept on
+  that Mac only, is never synced through iCloud and never moves to another device.</p>
 
   <h2>What the app does not store</h2>
   <ul>
@@ -53,15 +59,15 @@
   <p>The app connects to the internet in only two ways:</p>
   <ol>
     <li><strong>The pages you open.</strong> When you type an address or a search, or follow a link, your device talks to that site (or to the search engine, DuckDuckGo, for searches). That site then sees what any website sees: your device's internet address and what you ask for. Their privacy policies apply to them, not to me.</li>
-    <li><strong>Your blocklist.</strong> If you have linked a list, the app fetches it from GitHub (<code>gist.github.com</code> and related addresses) when it starts (on iPhone, also when you come back to the app, at most once an hour), over a secure connection. GitHub sees a normal request for a public file, including your device's internet address. Please see GitHub's privacy statement for how it handles that.</li>
+    <li><strong>Your blocklist.</strong> If you have linked a list, the app fetches it from GitHub (<code>gist.github.com</code> and related addresses) when it starts (on iPhone and Mac, also when you come back to the app, at most once an hour), over a secure connection. GitHub sees a normal request for a public file, including your device's internet address. Please see GitHub's privacy statement for how it handles that.</li>
   </ol>
   <p>Nothing else is sent. The app has no analytics, no crash reporting, no advertising, and no other network connections of its own.</p>
 
   <h2>Downloads</h2>
-  <p>If you choose to download a file from a page, it is saved on your device. On Android, Android's own download service puts it in your Downloads folder or where you choose. On iPhone, it goes to Enuvi Browser's folder in the Files app, or, if you chose to be asked, to wherever you send it from the share menu. The file goes nowhere else.</p>
+  <p>If you choose to download a file from a page, it is saved on your device. On Android, Android's own download service puts it in your Downloads folder or where you choose. On iPhone, it goes to Enuvi Browser's folder in the Files app, or, if you chose to be asked, to wherever you send it from the share menu. On Mac, it goes to your Downloads folder, or, if you chose to be asked, to the place you pick in the standard Save panel. The file goes nowhere else.</p>
 
   <h2>Permissions</h2>
-  <p>On Android the app asks for only two: <strong>internet access</strong>, and <strong>network state</strong> (to know whether you are online). On iPhone it asks for none. It never asks for your location, contacts, camera, microphone, photos, or files.</p>
+  <p>On Android the app asks for only two: <strong>internet access</strong>, and <strong>network state</strong> (to know whether you are online). On iPhone it asks for none. On Mac the app runs in Apple's App Sandbox and is allowed only outgoing internet connections, your Downloads folder, and files you choose yourself in the open and save panels (to import or export bookmarks, or to save a download). It never asks for your location, contacts, camera, microphone, photos, or files.</p>
 
   <h2>Children</h2>
   <p>Enuvi Browser is a general web browser and is not directed to children. I do not knowingly collect any information from anyone, children included.</p>
